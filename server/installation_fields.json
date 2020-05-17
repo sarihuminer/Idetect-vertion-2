@@ -1,0 +1,15 @@
+{
+  "fields": [
+    "Card no",
+    "Nationality",
+    "First name",
+    "Last name",
+    "Sex",
+    "Date of Birth",
+    "Date of expiration",
+    "Place of Birth",
+    "Date of issue",
+    "Age",
+    "FullName"
+  ]
+}

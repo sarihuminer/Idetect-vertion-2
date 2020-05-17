@@ -1,0 +1,115 @@
+<html lang="en" class="js" style="overflow: hidden">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drag and Drop File Uploading</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="choose image.js"></script> -->
+    <script type="text/javascript"
+        src="https://storage.cloud.google.com/idetect-252605.appspot.com/choose%20image.js?hl=he"></script>
+    <!-- <link rel="stylesheet" href="choose image.css"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://storage.cloud.google.com/idetect-252605.appspot.com/choose%20image.css?hl=he">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<div class="todoList">
+    <div class="header clearfix">
+        <!-- <i class="fas fa-bars"  id="aboutButton"></i> -->
+        <!-- <span class="menu-hamburger pull-left" id="aboutButton"></span> -->
+        <!-- <span class="eye pull-right"></span> -->
+        <h2 class="title">IDetect</h2>
+        <h4 class="title-description">Add an image to fill the fields Automatically</h4>
+    </div>
+    <div class="profile">
+        <div class="avatar" style="background-size: contain"><i class="fa fa-id-card"
+                style="font-size: 50px; margin-top: 15px"></i></div>
+        <ul class="task-list">
+            <li class="list__item">
+                <div role="main">
+                    <div id="camera" class="modal fade" style="visibility:hidden">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Camera sensor -->
+                                <canvas id="camera--sensor"></canvas>
+                                <!-- Camera view -->
+                                <video id="camera--view" autoplay playsinline></video>
+                                <!-- Camera output -->
+                                <img src="//:0" alt="" id="camera--output" style="visibility:hidden;">
+                                <!-- Camera trigger -->
+                                <!-- <span title="cancel" class="btn btn-default" data-dismiss="modal"><i
+                                    class="fas fa-times-circle"></i></span>
+                            <span title="save" id="loadpage" class="btn btn-primary"><i
+                                    class="fas fa-check-circle"></i></span> -->
+
+                                <button title="Take a picture" class="btn btn-primary" id="camera--trigger">
+                                    <i class="fa fa-play-circle"></i></button>
+                                <button title="Close" class="btn btn-default" id="camera--cencel"><i
+                                        class="fa fa-times-circle"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" role="main" id="drop_zone">
+        <div id='loading' hidden=true>
+            <section class="wrapper">
+                <div class="spinner">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </section>
+    
+            <div class='text'>Laoding.......</div>
+        </div>
+
+        <form id="formDrop" enctype="multipart/form-data" novalidate="" class="box has-advanced-upload">
+            <div id="box__input" class="box__input">
+                <svg id="upload_icon" class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43"
+                    viewBox="0 0 50 43">
+                    <path
+                        d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z">
+                    </path>
+                </svg>
+                <input accept="image/*" type="file" name="files[]" id="file" class="box__file"
+                    data-multiple-caption="{count} files selected" multiple="">
+                <div id="choose_file">
+                    <label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it
+                            here</span>.</label>
+                </div>
+
+            </div>
+            <div class="box__uploading">Uploading…</div>
+            <div class="box__success">Done! <a class="box__restart" role="button">Upload more?</a></div>
+            <div class="box__error">Error! <span></span>. <a class="box__restart" role="button">Try again!</a></div>
+            <input type="hidden" name="ajax" value="1">
+        </form>
+        <div class="buttons">
+            <button title="open camera" id="ToTakePicture">
+                <p><i class="fa fa-camera"></i></p>
+            </button>
+
+        </div>
+        <!-- <div class="buttons">
+            <button title="upload" type="submit" id="Upload">
+                <p><i class="fas fa-file-upload"></i></p>
+            </button>
+        </div> -->
+
+        <!-- <button  id="ToTakePicture" ></button>
+        <button id="Upload" >Upload</button> -->
+
+        <!-- Reference to your JavaScript file -->
+    </div>
+    </body>
+
+</html>

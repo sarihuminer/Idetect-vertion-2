@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+.button span {
+  /* transform: skew(-10deg); */
+  display: block;
+  float: left;
+
+}
+
+
+
+.title_0 span {
+  /* transform: skew(-10deg); */
+  display: block;
+  float: left;
+ 
+  min-width: 10px;
+  min-height: 10px;
+  position: relative;
+}
+
+

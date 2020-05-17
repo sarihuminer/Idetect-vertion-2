@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html style="overflow: hidden">
+
+<head>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+    <!-- <script src="install.js"></script> -->
+    <script src="https://storage.cloud.google.com/idetect-252605.appspot.com/install.js?hl=he"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="install.css"> -->
+    <link type="text/css" rel="stylesheet"
+        href="https://storage.cloud.google.com/idetect-252605.appspot.com/install.css?hl=he" />
+</head>
+
+<body>
+    <div class="todoList" id="myModal">
+        <div id="modal-dialog" class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="header clearfix">
+                        <!-- <i class="fa fa-bars"  id="aboutButton"></i> -->
+                        <!-- <span class="menu-hamburger pull-left" id="aboutButton"></span> -->
+                        <span id="aboutButton"></span>
+                        <!-- <span class="eye pull-right"></span> -->
+                        <h2 class="title">IDetect</h2>
+                        <h4 class="title-description">Install IDetect</h4>
+                    </div>
+
+                    <div class="profile">
+                        <div class="avatar" style="background-size: contain"><i class="fa fa-id-card"
+                                style="font-size: 50px; margin-top: 15px"></i></div>
+                        <ul class="task-list">
+                            <li style="display: none" class="list__item">
+                                <p class="item__title text-primary" id="about">About</p>
+                                <p class="item__desc text-info">........</p>
+                            </li>
+                            <li class="list__item">
+                                <p class="item__title text-primary">
+                                    <p id="manual"></p>
+                                </p>
+                                <p class="item__desc text-info"></p>
+                            </li>
+                            <li class="list__item">
+                                <div class="modal-footer">
+                                    <div class="buttons">
+                                        <span id="prevbtn" title="prev" class="btn btn-default">
+                                            <i class="fa fa-arrow-circle-left"></i></span>
+                                        <span id="nextbtn" title="next" class="btn btn-default"><i
+                                                class="fa fa-arrow-circle-right"></i></span>
+                                        <span title="cancel" class="btn btn-default" data-dismiss="modal"><i
+                                                class="fa fa-times-circle"></i></span>
+                                        <span title="save" id="loadpage" class="btn btn-primary"><i
+                                                class="fa fa-check-circle"></i></span>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
