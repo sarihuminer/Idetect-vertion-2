@@ -27,7 +27,7 @@ MarkupSafe==1.1.1
 micropython-cpython-ubinascii==0.0
 nltk==3.4.5
 numpy==1.17.2
-pillow==6.1.0
+pillow==9.0.1
 protobuf==3.9.2
 pyasn1==0.4.6
 pyasn1-modules==0.2.6
